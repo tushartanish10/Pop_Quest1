@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP_QUEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <div class="welcome-message">
+            <h1>Welcome to POP Quest!</h1>
+            <p>Can you pop the right bubbles in time?</p>
+        </div>
+        <div class="instructions">
+            <p>Click on bubbles that match the target number to score!</p>
+        </div>
+        <div class="difficulty-selection">
+        <button id="easy" class="difficulty-button">Easy</button>
+        <button id="medium" class="difficulty-button">Medium</button>
+        <button id="hard" class="difficulty-button">Hard</button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="panel">
+            <div id="ptop">
+                <div class="elem">
+                    <h2>Hit</h2>
+                    <div id="hitval" class="box">5</div>
+                </div>
+                <div class="elem">
+                    <h2>Timer</h2>
+                    <div id="timerval" class="box">60</div>
+                </div>
+                <div class="elem">
+                    <h2>Score</h2>
+                    <div id="scoreval"class="box">0</div>
+                </div>
+            </div>
+            <div id="pbtm">   
+            </div>
+        </div>
+    </div>
+    <button id="restart">Restart</button>
+    <!-- Add an End Game button to the game screen -->
+<button id="end-game" class="end-button">End Game</button>
+
+<!-- The area where the score will be shown after ending the game -->
+<div id="game-status" class="game-status">
+    <h1 id="end-message"></h1>
+    <h2 id="final-score"></h2>
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
